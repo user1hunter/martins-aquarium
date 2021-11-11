@@ -1,42 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Martin's Aquarium</title>
-    <link rel="stylesheet" href="main.css">
-    <h1>Martin's Aquarium</h1>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Martin's Marvelous Rooster Aquarium</title>
+  </head>
+  <body>
+    <header>
+      <div><img class="logo" src="images/logo-gray.png" alt="logo" /></div>
+      <div class="headline">
+        <h1>Martin's Marvelous Fish Aquarium</h1>
+      </div>
+    </header>
     <main>
-        <article class="content">
-            <section class="content__fish-list">
-                    <l1>"Fish"</l1>
-                    <l1>"Fish"</l1>
-                    <l1>"Fish"</l1>
-                    <l1>"Fish"</l1>
-            </section>
-            <section class="content__quote-list">
-                    <l1>"Quotes"</l1>
-                    <l1>"Quotes"</l1>
-                    <l1>"Quotes"</l1>
-                    <l1>"Quotes"</l1>
-            </section>
-            <section class="content__location-list">
-                    <l1>"Locations"</l1>
-                    <l1>"Locations"</l1>
-                    <l1>"Locations"</l1>
-                    <l1>"Locations"</l1>
-            </section>
-        </article>
-        <sidebar class="information">
-            <div class="tank__tip">
-                <l1>"Tank Tips!"</l1>
-                <l1>"Tank Tips!"</l1>
-                <l1>"Tank Tips!"</l1>
+      <div class="content content--left">
+        <!-- Fish List Component -->
+        <article class="fishList">
+          <section class="fish card">
+            <div>
+              <img class="fish__image" src="images/blue-boy.png" />
             </div>
-        </sidebar>
+            <div class="fish__name">Name: Eric</div>
+            <div class="fish__species">Species: Hispanic</div>
+            <div class="fish__length">Length: 7 Millimeters</div>
+            <div class="fish__location">Location: Sahara Desert</div>
+            <div class="fish__diet">Diet: Cactus</div>
+          </section> 
+          <section class="fish card">
+            <div>
+              <img class="fish__image image--card" src="images/clownfish.png" />
+            </div>
+            <div class="fish__name">Connor</div>
+            <div class="fish__species">Clown</div>
+            <div class="fish__length">185 Centimeters </div>
+            <div class="fish__location">On a Boat</div>
+            <div class="fish__diet">Spilt Popcorn</div>
+          </section>
+          <section class="fish card">
+            <div>
+              <img class="fish__image image--card" src="images/emo-fish.png" />
+            </div>
+            <div class="fish__name">Gavin</div>
+            <div class="fish__species">Emo</div>
+            <div class="fish__length">5 Feet</div>
+            <div class="fish__location">Crunch Fitness</div>
+            <div class="fish__diet">Smaller Lifters</div>
+          </section>
+          <section class="fish card">
+            <div>
+              <img class="fish__image image--card" src="images/fancy-fish.png" />
+            </div>
+            <div class="fish__name">Chandler</div>
+            <div class="fish__species">Combat Medic</div>
+            <div class="fish__length">6 Feet</div>
+            <div class="fish__location">Clarksville</div>
+            <div class="fish__diet">MRE's</div>
+          </section>
+        </article>
+        <!-- Quotes component -->
+        <article class="quotesList">
+          <section class="quote card">
+            <div class="quote__text">"Just Keep Swimming!"</div>
+            <div class="quote__author">--Dory</div>
+          </section>
+          <section class="quote card">
+            <div class="quote__text">"Fish are our friends"</div>
+            <div class="quote__author">--Bruce</div>
+          </section> 
+        </article>
+        <!-- locations component -->
+        <article class="locationsList">
+          <section class="location card">
+            <div>
+              <img
+                class="location__image"
+                src="./images/barrier_reef.jpg"
+                alt=""
+              />
+            </div>
+            <div class="location__name">Great Barrier Reef</div>
+            <div class="location__url">
+              <a
+                href="https://www.australia.com/en-us/places/cairns-and-surrounds/guide-to-the-great-barrier-reef.html"
+                >Australian Guide to the Great Barrier Reef</a
+              >
+            </div>
+            <div class="location__access">Access Difficulty: 5</div>
+            <div class="location__desc">
+              Home to diverse marine life of the most vivid colours, the Great
+              Barrier Reef offers the opportunity for great adventure, both in
+              luxury and on a budget. Whether you explore the stunning
+              Whitsunday Islands, trek the ancient Daintree Rainforest or relax
+              on luxurious tropical islands such as Hayman and Lizard, a day on
+              the reef is all about the unforgettable nature that surrounds you.
+            </div>
+          </section>
+        </article>
+      </div>
+      <!-- Tank tips component -->
+      <div class="content content--right">
+        <aside class="tankTips">
+          <h3>Tank Tips!</h3>
+          <section class="tip card">
+            <h4 class="tip__title">How to Clean your Tank 4 Cheap!</h4>
+            <div class="tip__text">Skany tanks are rank. A little elbow grease and a toliet brush can do wonders!</div>
+            <div class="tip__url">Read more <a href="https://www.skanytank.com">here!</a></div>
+          </section>
+          <section class="tip card">
+            <h4 class="tip__title">Keep Your Cats Out of The Tank!</h4>
+            <div class="tip__text">Cats in your tank? Give 'em a spank. Advice you can take to the bank</div>
+            <div class="tip__url">Read more <a href="https://www.badkitty.com">here!</a></div>
+          </section>
+        </aside>
+      </div>
     </main>
-</body>
+  </body>
 </html>
