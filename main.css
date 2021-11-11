@@ -1,0 +1,46 @@
+h1 {
+    background-color: orange;
+}
+
+.content {
+    border: 1px solid red;
+    display: flex;
+    float: left;
+    height: 52em;
+    width: 70%;
+    flex-direction: column;
+    justify-content: space-evenly; 
+}
+
+.content__fish-list {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.content__quote-list {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.content__location-list {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.information {
+    border: 1px solid blue;
+    display: flex;
+    float: right;
+    height: 52em;
+    width: 28%;
+    align-content: space-around;
+    justify-content: space-evenly;
+}
+
+.tank__tip {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: space-evenly;
+}
